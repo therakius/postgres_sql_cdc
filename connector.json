@@ -1,0 +1,24 @@
+{
+  "name": "mysql-fo-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "tasks.max": "1",
+    "database.hostname": "172.17.0.1",
+    "database.port": "3306",
+    "database.user": "gaspar",
+    "database.password": "sic parvis magna",
+    "database.server.id": "666",
+    "database.server.name": "localmysql",
+    "database.include.list": "transaction_test",
+    "table.include.list": "transaction_test.fo_feedback_operator",
+    "database.history.kafka.bootstrap.servers": "kafka:29092",
+    "database.history.kafka.topic": "dbhistory.topic-name",
+    "database.allowPublicKeyRetrieval": "true",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable": "false",
+    "transforms": "unwrap",
+    "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+    "transforms.unwrap.drop.tombstones": "false"
+  }
+}

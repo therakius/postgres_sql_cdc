@@ -1,0 +1,4 @@
+therakius@scideralius:~/Documents/work/mysql_pg_sync$ docker exec -it kafka kafka-console-consumer \
+  --bootstrap-server localhost:9092 \
+  --topic localmysql.transaction_test.fo_feedback_operator \
+  --from-beginning
