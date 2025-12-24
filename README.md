@@ -636,7 +636,7 @@ docker exec -it kafka kafka-consumer-groups --describe \
   --bootstrap-server localhost:29092
 ```
 
-## 10. Referências
+## 9. Referências
 
 - [Debezium Documentation](https://debezium.io/documentation/)
 - [Kafka Documentation](https://kafka.apache.org/documentation/)
